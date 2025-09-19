@@ -1,0 +1,12 @@
+print("Denis Šragalj")
+
+print (" ______")
+print ("|      |")
+print ("|      | a ")
+print ("|______|")
+print("   a ")
+print()
+print ("       /\\")
+print ("      /  \\")
+print ("     /    \\")
+print ("    /______\\")
