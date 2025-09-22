@@ -17,9 +17,14 @@ print(sretan_broj)    #  ('1', '2', '3', '4')
 spojeni_tuple = karakteri_naziv + sretan_broj   # spajamo dva tuple u jedan tuple (nizovi)
 
 print(spojeni_tuple)   # ('G', 'o', 'k', 'u', '1', '2', '3', '4')
-
-del(karakteri)  # briše cijeli niz.
+print(f'tuple karakteri se sastoji od {len(karakteri)} elemenata')  # tuple karakteri se sastoji od 2 elemenata
 print(karakteri)   # NameError: name 'karakteri' is not defined
-
-
+print('Brišem karaktere')  
+del(karakteri)  # briše cijeli niz.
+try:
+    print(karakteri)   # NameError: name 'karakteri' is not defined
+except NameError:
+    print('Varijabla karakteri je obrisana')  # Varijabla karakteri je obrisana 
+print('Ispisujem spojeni tuple nakon brisanja karaktera')    
+print(spojeni_tuple)   # ('G', 'o', 'k', 'u', '1', '2', '3', '4')
 
