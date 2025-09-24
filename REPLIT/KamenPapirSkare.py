@@ -160,7 +160,7 @@ while True:
         choices = get_choices()
 
         if choices["player"] in ["quit", "izlaz", "exit"]:
-            upozorenje_poruka(f"\nYou chose to end the match. Thanks for playing!")
+            upozorenje_poruka(f"\nOdabrali ste izlaz iz igre. Hvala na igranju!")
             break  # Izlazi iz petlje za partiju i ide na ispis rezultata
 
         valid_options = ["kamen", "papir", "škare"]
@@ -193,7 +193,7 @@ while True:
     if computer_score == player_score:
         zaglavlje_plava("\n* * * N E R J E Š E N O !   * * *")
     elif computer_score > player_score:
-        izgubio_poruka("\n*** Računalo je pobjedilo! Vi ste izgubili :( ***")
+        izgubio_poruka("\n*** Računalo je pobjedilo :) Vi ste izgubili :( ***")
     else:
         pobjedio_poruka("\n*** Čestitam! Pobjedili ste! :) ***")
 
